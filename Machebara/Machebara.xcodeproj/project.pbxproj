@@ -1,0 +1,736 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D80F08DC932BBA596384FE6 /* Pods_Machebara.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61537B82E284B7A6B47626A2 /* Pods_Machebara.framework */; };
+		44D22D97D329BB2FB626D2A3 /* Pods_MachebaraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04130FB3ACB1EB51E6A2F58E /* Pods_MachebaraUITests.framework */; };
+		469F3A6220D0E7F4000E779F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469F3A6120D0E7F4000E779F /* AppDelegate.swift */; };
+		469F3A6420D0E7F4000E779F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469F3A6320D0E7F4000E779F /* ViewController.swift */; };
+		469F3A6720D0E7F4000E779F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 469F3A6520D0E7F4000E779F /* Main.storyboard */; };
+		469F3A6920D0E7F5000E779F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 469F3A6820D0E7F5000E779F /* Assets.xcassets */; };
+		469F3A6C20D0E7F5000E779F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 469F3A6A20D0E7F5000E779F /* LaunchScreen.storyboard */; };
+		469F3A7720D0E7F5000E779F /* MachebaraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469F3A7620D0E7F5000E779F /* MachebaraTests.swift */; };
+		469F3A8220D0E7F5000E779F /* MachebaraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469F3A8120D0E7F5000E779F /* MachebaraUITests.swift */; };
+		469F3A9020D0E860000E779F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469F3A8F20D0E860000E779F /* Constants.swift */; };
+		469F3A9820D0F2CC000E779F /* ActorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469F3A9720D0F2CC000E779F /* ActorTableViewCell.swift */; };
+		469F3A9A20D0F3C4000E779F /* ActorApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469F3A9920D0F3C4000E779F /* ActorApiResponse.swift */; };
+		469F3A9C20D0F5F0000E779F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469F3A9B20D0F5F0000E779F /* APIManager.swift */; };
+		958FD5F8F0322F70C9DE18A4 /* Pods_MachebaraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 181AAFDF53F26A3AC6F9AE0B /* Pods_MachebaraTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		469F3A7320D0E7F5000E779F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 469F3A5620D0E7F4000E779F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 469F3A5D20D0E7F4000E779F;
+			remoteInfo = Machebara;
+		};
+		469F3A7E20D0E7F5000E779F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 469F3A5620D0E7F4000E779F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 469F3A5D20D0E7F4000E779F;
+			remoteInfo = Machebara;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04130FB3ACB1EB51E6A2F58E /* Pods_MachebaraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MachebaraUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		087D36315C734237FDCE4156 /* Pods-Machebara.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Machebara.release.xcconfig"; path = "Pods/Target Support Files/Pods-Machebara/Pods-Machebara.release.xcconfig"; sourceTree = "<group>"; };
+		181AAFDF53F26A3AC6F9AE0B /* Pods_MachebaraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MachebaraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CBDC9A162B58512D4592AF8 /* Pods-Machebara.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Machebara.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Machebara/Pods-Machebara.debug.xcconfig"; sourceTree = "<group>"; };
+		469F3A5E20D0E7F4000E779F /* Machebara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Machebara.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		469F3A6120D0E7F4000E779F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		469F3A6320D0E7F4000E779F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		469F3A6620D0E7F4000E779F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		469F3A6820D0E7F5000E779F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		469F3A6B20D0E7F5000E779F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		469F3A6D20D0E7F5000E779F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		469F3A7220D0E7F5000E779F /* MachebaraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MachebaraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		469F3A7620D0E7F5000E779F /* MachebaraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachebaraTests.swift; sourceTree = "<group>"; };
+		469F3A7820D0E7F5000E779F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		469F3A7D20D0E7F5000E779F /* MachebaraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MachebaraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		469F3A8120D0E7F5000E779F /* MachebaraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachebaraUITests.swift; sourceTree = "<group>"; };
+		469F3A8320D0E7F5000E779F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		469F3A8F20D0E860000E779F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		469F3A9720D0F2CC000E779F /* ActorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorTableViewCell.swift; sourceTree = "<group>"; };
+		469F3A9920D0F3C4000E779F /* ActorApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorApiResponse.swift; sourceTree = "<group>"; };
+		469F3A9B20D0F5F0000E779F /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		61537B82E284B7A6B47626A2 /* Pods_Machebara.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Machebara.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70941198F335B4175CAEADEC /* Pods-MachebaraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MachebaraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MachebaraUITests/Pods-MachebaraUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8FCF108D69F3DF65E3C30D09 /* Pods-MachebaraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MachebaraTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MachebaraTests/Pods-MachebaraTests.release.xcconfig"; sourceTree = "<group>"; };
+		A87B9DF63AED5A6B072B71E2 /* Pods-MachebaraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MachebaraUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MachebaraUITests/Pods-MachebaraUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D06D80394B3ED0BE6CCD56E2 /* Pods-MachebaraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MachebaraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MachebaraTests/Pods-MachebaraTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		469F3A5B20D0E7F4000E779F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D80F08DC932BBA596384FE6 /* Pods_Machebara.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		469F3A6F20D0E7F5000E779F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				958FD5F8F0322F70C9DE18A4 /* Pods_MachebaraTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		469F3A7A20D0E7F5000E779F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D22D97D329BB2FB626D2A3 /* Pods_MachebaraUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E09A6A9C3F91F86790DF79D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CBDC9A162B58512D4592AF8 /* Pods-Machebara.debug.xcconfig */,
+				087D36315C734237FDCE4156 /* Pods-Machebara.release.xcconfig */,
+				D06D80394B3ED0BE6CCD56E2 /* Pods-MachebaraTests.debug.xcconfig */,
+				8FCF108D69F3DF65E3C30D09 /* Pods-MachebaraTests.release.xcconfig */,
+				70941198F335B4175CAEADEC /* Pods-MachebaraUITests.debug.xcconfig */,
+				A87B9DF63AED5A6B072B71E2 /* Pods-MachebaraUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		469F3A5520D0E7F4000E779F = {
+			isa = PBXGroup;
+			children = (
+				469F3A6020D0E7F4000E779F /* Machebara */,
+				469F3A7520D0E7F5000E779F /* MachebaraTests */,
+				469F3A8020D0E7F5000E779F /* MachebaraUITests */,
+				469F3A5F20D0E7F4000E779F /* Products */,
+				1E09A6A9C3F91F86790DF79D /* Pods */,
+				88AC7478D3F4B54E04E2E02B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		469F3A5F20D0E7F4000E779F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				469F3A5E20D0E7F4000E779F /* Machebara.app */,
+				469F3A7220D0E7F5000E779F /* MachebaraTests.xctest */,
+				469F3A7D20D0E7F5000E779F /* MachebaraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		469F3A6020D0E7F4000E779F /* Machebara */ = {
+			isa = PBXGroup;
+			children = (
+				469F3A6120D0E7F4000E779F /* AppDelegate.swift */,
+				469F3A6320D0E7F4000E779F /* ViewController.swift */,
+				469F3A9920D0F3C4000E779F /* ActorApiResponse.swift */,
+				469F3A6520D0E7F4000E779F /* Main.storyboard */,
+				469F3A6820D0E7F5000E779F /* Assets.xcassets */,
+				469F3A6A20D0E7F5000E779F /* LaunchScreen.storyboard */,
+				469F3A6D20D0E7F5000E779F /* Info.plist */,
+				469F3A8F20D0E860000E779F /* Constants.swift */,
+				469F3A9720D0F2CC000E779F /* ActorTableViewCell.swift */,
+				469F3A9B20D0F5F0000E779F /* APIManager.swift */,
+			);
+			path = Machebara;
+			sourceTree = "<group>";
+		};
+		469F3A7520D0E7F5000E779F /* MachebaraTests */ = {
+			isa = PBXGroup;
+			children = (
+				469F3A7620D0E7F5000E779F /* MachebaraTests.swift */,
+				469F3A7820D0E7F5000E779F /* Info.plist */,
+			);
+			path = MachebaraTests;
+			sourceTree = "<group>";
+		};
+		469F3A8020D0E7F5000E779F /* MachebaraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				469F3A8120D0E7F5000E779F /* MachebaraUITests.swift */,
+				469F3A8320D0E7F5000E779F /* Info.plist */,
+			);
+			path = MachebaraUITests;
+			sourceTree = "<group>";
+		};
+		88AC7478D3F4B54E04E2E02B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61537B82E284B7A6B47626A2 /* Pods_Machebara.framework */,
+				181AAFDF53F26A3AC6F9AE0B /* Pods_MachebaraTests.framework */,
+				04130FB3ACB1EB51E6A2F58E /* Pods_MachebaraUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		469F3A5D20D0E7F4000E779F /* Machebara */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 469F3A8620D0E7F5000E779F /* Build configuration list for PBXNativeTarget "Machebara" */;
+			buildPhases = (
+				D0EDAAC86026A782AB2496D8 /* [CP] Check Pods Manifest.lock */,
+				469F3A5A20D0E7F4000E779F /* Sources */,
+				469F3A5B20D0E7F4000E779F /* Frameworks */,
+				469F3A5C20D0E7F4000E779F /* Resources */,
+				782A713C6E4321C5AE990072 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Machebara;
+			productName = Machebara;
+			productReference = 469F3A5E20D0E7F4000E779F /* Machebara.app */;
+			productType = "com.apple.product-type.application";
+		};
+		469F3A7120D0E7F5000E779F /* MachebaraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 469F3A8920D0E7F5000E779F /* Build configuration list for PBXNativeTarget "MachebaraTests" */;
+			buildPhases = (
+				8CBC3381453AB5F3290E8910 /* [CP] Check Pods Manifest.lock */,
+				469F3A6E20D0E7F5000E779F /* Sources */,
+				469F3A6F20D0E7F5000E779F /* Frameworks */,
+				469F3A7020D0E7F5000E779F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				469F3A7420D0E7F5000E779F /* PBXTargetDependency */,
+			);
+			name = MachebaraTests;
+			productName = MachebaraTests;
+			productReference = 469F3A7220D0E7F5000E779F /* MachebaraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		469F3A7C20D0E7F5000E779F /* MachebaraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 469F3A8C20D0E7F5000E779F /* Build configuration list for PBXNativeTarget "MachebaraUITests" */;
+			buildPhases = (
+				A72A02CABC4CC75FC1FADAA4 /* [CP] Check Pods Manifest.lock */,
+				469F3A7920D0E7F5000E779F /* Sources */,
+				469F3A7A20D0E7F5000E779F /* Frameworks */,
+				469F3A7B20D0E7F5000E779F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				469F3A7F20D0E7F5000E779F /* PBXTargetDependency */,
+			);
+			name = MachebaraUITests;
+			productName = MachebaraUITests;
+			productReference = 469F3A7D20D0E7F5000E779F /* MachebaraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		469F3A5620D0E7F4000E779F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Lester  Padul";
+				TargetAttributes = {
+					469F3A5D20D0E7F4000E779F = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					469F3A7120D0E7F5000E779F = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = 469F3A5D20D0E7F4000E779F;
+					};
+					469F3A7C20D0E7F5000E779F = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = 469F3A5D20D0E7F4000E779F;
+					};
+				};
+			};
+			buildConfigurationList = 469F3A5920D0E7F4000E779F /* Build configuration list for PBXProject "Machebara" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 469F3A5520D0E7F4000E779F;
+			productRefGroup = 469F3A5F20D0E7F4000E779F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				469F3A5D20D0E7F4000E779F /* Machebara */,
+				469F3A7120D0E7F5000E779F /* MachebaraTests */,
+				469F3A7C20D0E7F5000E779F /* MachebaraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		469F3A5C20D0E7F4000E779F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				469F3A6C20D0E7F5000E779F /* LaunchScreen.storyboard in Resources */,
+				469F3A6920D0E7F5000E779F /* Assets.xcassets in Resources */,
+				469F3A6720D0E7F4000E779F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		469F3A7020D0E7F5000E779F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		469F3A7B20D0E7F5000E779F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		782A713C6E4321C5AE990072 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Machebara/Pods-Machebara-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Machebara/Pods-Machebara-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CBC3381453AB5F3290E8910 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MachebaraTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A72A02CABC4CC75FC1FADAA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MachebaraUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0EDAAC86026A782AB2496D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Machebara-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		469F3A5A20D0E7F4000E779F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				469F3A9C20D0F5F0000E779F /* APIManager.swift in Sources */,
+				469F3A6420D0E7F4000E779F /* ViewController.swift in Sources */,
+				469F3A9A20D0F3C4000E779F /* ActorApiResponse.swift in Sources */,
+				469F3A6220D0E7F4000E779F /* AppDelegate.swift in Sources */,
+				469F3A9020D0E860000E779F /* Constants.swift in Sources */,
+				469F3A9820D0F2CC000E779F /* ActorTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		469F3A6E20D0E7F5000E779F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				469F3A7720D0E7F5000E779F /* MachebaraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		469F3A7920D0E7F5000E779F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				469F3A8220D0E7F5000E779F /* MachebaraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		469F3A7420D0E7F5000E779F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 469F3A5D20D0E7F4000E779F /* Machebara */;
+			targetProxy = 469F3A7320D0E7F5000E779F /* PBXContainerItemProxy */;
+		};
+		469F3A7F20D0E7F5000E779F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 469F3A5D20D0E7F4000E779F /* Machebara */;
+			targetProxy = 469F3A7E20D0E7F5000E779F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		469F3A6520D0E7F4000E779F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				469F3A6620D0E7F4000E779F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		469F3A6A20D0E7F5000E779F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				469F3A6B20D0E7F5000E779F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		469F3A8420D0E7F5000E779F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		469F3A8520D0E7F5000E779F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		469F3A8720D0E7F5000E779F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CBDC9A162B58512D4592AF8 /* Pods-Machebara.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6SHVB3KU8;
+				INFOPLIST_FILE = Machebara/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fdc.exam.Machebara;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		469F3A8820D0E7F5000E779F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 087D36315C734237FDCE4156 /* Pods-Machebara.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6SHVB3KU8;
+				INFOPLIST_FILE = Machebara/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fdc.exam.Machebara;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		469F3A8A20D0E7F5000E779F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D06D80394B3ED0BE6CCD56E2 /* Pods-MachebaraTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6SHVB3KU8;
+				INFOPLIST_FILE = MachebaraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fdc.exam.MachebaraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Machebara.app/Machebara";
+			};
+			name = Debug;
+		};
+		469F3A8B20D0E7F5000E779F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FCF108D69F3DF65E3C30D09 /* Pods-MachebaraTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6SHVB3KU8;
+				INFOPLIST_FILE = MachebaraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fdc.exam.MachebaraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Machebara.app/Machebara";
+			};
+			name = Release;
+		};
+		469F3A8D20D0E7F5000E779F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70941198F335B4175CAEADEC /* Pods-MachebaraUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6SHVB3KU8;
+				INFOPLIST_FILE = MachebaraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fdc.exam.MachebaraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Machebara;
+			};
+			name = Debug;
+		};
+		469F3A8E20D0E7F5000E779F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A87B9DF63AED5A6B072B71E2 /* Pods-MachebaraUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6SHVB3KU8;
+				INFOPLIST_FILE = MachebaraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fdc.exam.MachebaraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Machebara;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		469F3A5920D0E7F4000E779F /* Build configuration list for PBXProject "Machebara" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				469F3A8420D0E7F5000E779F /* Debug */,
+				469F3A8520D0E7F5000E779F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		469F3A8620D0E7F5000E779F /* Build configuration list for PBXNativeTarget "Machebara" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				469F3A8720D0E7F5000E779F /* Debug */,
+				469F3A8820D0E7F5000E779F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		469F3A8920D0E7F5000E779F /* Build configuration list for PBXNativeTarget "MachebaraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				469F3A8A20D0E7F5000E779F /* Debug */,
+				469F3A8B20D0E7F5000E779F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		469F3A8C20D0E7F5000E779F /* Build configuration list for PBXNativeTarget "MachebaraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				469F3A8D20D0E7F5000E779F /* Debug */,
+				469F3A8E20D0E7F5000E779F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 469F3A5620D0E7F4000E779F /* Project object */;
+}

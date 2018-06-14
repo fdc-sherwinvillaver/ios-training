@@ -1,0 +1,6 @@
+framework module Pods_MachebaraTests {
+  umbrella header "Pods-MachebaraTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

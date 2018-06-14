@@ -1,0 +1,6 @@
+framework module Pods_Machebara {
+  umbrella header "Pods-Machebara-umbrella.h"
+
+  export *
+  module * { export * }
+}
