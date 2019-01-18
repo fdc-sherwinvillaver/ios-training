@@ -19,7 +19,23 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    //MARK: Actions
+    @IBAction func button1(_ sender: UIButton) {
+        if sender.title(for: .normal) == "X" {
+            sender.setTitle("A very long title for this button", for: .normal)
+        } else {
+            sender.setTitle("X", for: .normal)
+        }
+    }
+    
+    @IBAction func button2(_ sender: UIButton) {
+        if sender.title(for: .normal) == "X" {
+            sender.setTitle("A very long title for this button", for: .normal)
+        } else {
+            sender.setTitle("X", for: .normal)
+        }
+    }
+    
 }
 
